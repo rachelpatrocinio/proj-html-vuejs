@@ -20,27 +20,27 @@ export default {
       menu: [
         {
             name: 'HOME',
-            src: ''
+            src: '#'
         },
         {
             name: 'COURSES',
-            src: ''
+            src: '#'
         },
         {
             name: 'INSTRUCTORS',
-            src: ''
+            src: '#'
         },
         {
             name: 'EVENTS',
-            src: ''
+            src: '#'
         },
         {
             name: 'PAGES',
-            src: ''
+            src: '#'
         },
         {
             name: 'ELEMENTS',
-            src: ''
+            src: '#'
         }
       ]
     }
