@@ -1,6 +1,6 @@
 <template>
     <section class="hero-banner">
-        <div class="container d-flex justify-content-center">
+        <div class="container-xxl d-flex justify-content-center">
             <div class="row">
                 <h1 class="hero-title"> Contemporary Ideas</h1>
                 <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum numquam ea excepturi laudantium, tempore voluptas ratione odio mollitia corrupti perspiciatis magnam, reprehenderit laboriosam accusantium temporibus iusto minima?</p>
@@ -32,17 +32,22 @@
         }
 
         .hero-description{
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 20px;
         }
 
         button{
-        background-color: $brand-color;
-        margin-top: 30px;
-        padding: 20px 30px ;
-        border: none;
-        color: white
-    }
+            background-color: $brand-color;
+            margin-top: 30px;
+            padding: 20px 30px ;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $brand-light-color;
+            }
+        }
     }
 }
 

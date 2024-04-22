@@ -1,6 +1,6 @@
 <template>
     <header class="main-header">
-        <div class="container d-flex justify-space-between">
+        <div class="container-xxl d-flex justify-space-between">
             <AppLogo />
             <AppNavbar :menu="this.menu"/>
         </div>

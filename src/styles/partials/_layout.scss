@@ -1,4 +1,18 @@
-.container{
-    max-width: 1600px;
+.container-xxl{
+    width: 1400px;
     margin: 0 auto;
+}
+
+.container-xl{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-lg{
+    width: 992px;
+    margin: 0 auto;
+}
+
+.col-2{
+    width: calc(2* 100% / 12);
 }

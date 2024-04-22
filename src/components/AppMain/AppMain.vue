@@ -1,12 +1,16 @@
 <template>
     <HeroBanner />
+    <AcademySubjects />
 </template>
 
 <script>
 import HeroBanner from './HeroBanner.vue';
+import AcademySubjects from './AcademySubjects.vue';
+
 export default {
     components:{
-        HeroBanner
+        HeroBanner,
+        AcademySubjects
     }
 }
 </script>
