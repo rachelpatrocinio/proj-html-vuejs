@@ -43,6 +43,7 @@
             border: none;
             color: white;
             cursor: pointer;
+            font-size: 16px;
 
             &:hover{
                 background-color: $brand-light-color;

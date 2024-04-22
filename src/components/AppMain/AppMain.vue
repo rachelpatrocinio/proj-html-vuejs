@@ -4,6 +4,7 @@
     <HomeTutoringSection />
     <EmpoweringChildren />
     <StudentsReviews />
+    <LearningPossibilities />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import AcademySubjectsSection from './AcademySubjectsSection.vue';
 import HomeTutoringSection from './HomeTutoringSection.vue';
 import EmpoweringChildren from './EmpoweringChildren.vue';
 import StudentsReviews from './StudentsReviews.vue';
+import LearningPossibilities from './LearningPossibilities.vue';
 
 export default {
     components:{
@@ -19,7 +21,8 @@ export default {
         AcademySubjectsSection,
         HomeTutoringSection,
         EmpoweringChildren,
-        StudentsReviews
+        StudentsReviews,
+        LearningPossibilities
     }
 }
 </script>
