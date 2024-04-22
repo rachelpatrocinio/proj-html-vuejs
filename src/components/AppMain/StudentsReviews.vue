@@ -1,9 +1,9 @@
 <template>
     <section class="students-reviews">
-        <div class="container-xxl">
+        <div class="container-lg">
             <div class="row d-flex flex-column align-items-center">
                 <img src="../../../public/students-reviews/instructor-img-6.jpg" alt="student">
-                <p class="student-review">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum facere!"</p>
+                <p class="student-review">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!"</p>
                 <p class="student-name">Joan Collins</p>
                 <p class="dots">
                     <span class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
@@ -24,8 +24,9 @@
     background-color: $brand-color;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
     background-position-y: 300px;
-    padding: 200px;
+    padding: 200px 0;
     color: white;
 
     img{
@@ -57,6 +58,4 @@
     }
 
 }
-
-
 </style>
