@@ -13,7 +13,8 @@
 @use '../../styles/partials/variables' as *;
 
 .home-tutoring{
-    padding: 50px 0;
+    padding: 50px;
+        
     .home-tutoring-title{
         font-size: 60px;
     }

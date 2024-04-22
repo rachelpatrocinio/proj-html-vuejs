@@ -17,7 +17,7 @@
 @use '../../styles/partials/variables' as *;
 
 .hero-banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../../../public/course-9-f-img.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../../../public/hero-banner/course-9-f-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height:100vh;
