@@ -1,6 +1,6 @@
 <template>
     <section class="academy-subjects">
-        <div class="container-xl">
+        <div class="container-xxl">
             <div class="row d-flex">
                 <div class="col-2">
                     <div class="subject-card flex-column">
@@ -45,16 +45,21 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
-.subject-card{
-    margin: 20px;
-    padding: 70px 10px;
-    border: 1px solid lightgray;
-    background-color: $brand-light-bg;
-    display: flex;
-    align-items: center;
+.academy-subjects{
+    padding: 50px 0;
 
-    .subject-title{
-        margin-top: 20px;
+    .subject-card{
+        margin: 20px;
+        padding: 70px 10px;
+        border: 1px solid lightgray;
+        background-color: $brand-light-bg;
+        display: flex;
+        align-items: center;
+
+        .subject-title{
+            margin-top: 20px;
+        }
     }
 }
+
 </style>
