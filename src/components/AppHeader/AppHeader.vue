@@ -26,9 +26,10 @@ export default {
 
 <style lang="scss" scoped>
 .main-header{
-    background-color: black;
     padding: 30px;
     color: white;
     width: 100%;
+    position: absolute;
+    z-index: 100;
 }
 </style>
