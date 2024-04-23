@@ -1,5 +1,5 @@
 <template>
-    <img src="../../../public/logo/logo-light.png" alt="iCademy Logo">
+    <a href="#"><img src="../../../public/logo/logo-light.png" alt="iCademy Logo"></a>
 </template>
 
 <style lang="scss" scoped>
