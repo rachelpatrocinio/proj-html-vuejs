@@ -1,5 +1,5 @@
 <template>
-    <ul class="d-flex">
+    <ul class="d-flex flex-wrap">
         <li class="menu-element" v-for="singleMenuElement in menu"> 
             <a :href="singleMenuElement.src">{{ singleMenuElement.name }}</a>
         </li>

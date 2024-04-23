@@ -1,15 +1,19 @@
+body{
+    width: 100%;
+}
+
 .container-xxl{
-    width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .container-xl{
-    width: 1200px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
 .container-lg{
-    width: 992px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
