@@ -63,18 +63,18 @@ export default {
 
 h1{
     margin-bottom: 50px;
-    line-height: 60px;
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 45px;
 }
 
 .main-footer{
     padding-top: 150px;
     background-color: $brand-dark-color;
     color: white;
-    line-height: 40px;
+    line-height: 30px;
 
     .row:first-child{
-        border-bottom: 1px solid $lightest-gray;
+        border-bottom: 1px solid $light-gray;
         padding: 100px 0;
 
         .description{
@@ -82,15 +82,16 @@ h1{
             
             img{
                 margin-bottom: 50px;
+                width: 200px;
             }
 
             .footer-description{
-                font-size: 20px;
+                font-size: 18px;
                 margin-bottom: 30px;
             }
 
             p{
-                font-size: 20px;
+                font-size: 18px;
 
                 .icon{
                     margin-right: 20px;
@@ -106,17 +107,18 @@ h1{
 
                 h2{
                     color: $lightest-gray;
+                    font-size: 20px;
                 }
 
                 p{
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
         }
 
         .support{
             li{
-                font-size: 20px;
+                font-size: 18px;
                 color: $lightest-gray;
 
                 &:hover{
@@ -132,8 +134,8 @@ h1{
 
     .row:last-child{
         padding: 30px 0;
-        color: $lightest-gray;
-        font-size: 20px;
+        color: $light-gray;
+        font-size: 18px;
 
         li{
             margin: 0 10px;
