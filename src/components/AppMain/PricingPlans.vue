@@ -2,7 +2,7 @@
     <section class="pricing-plans">
         <div class="container-xxl">
             <h1 class="pricing-plans-title">Pricing Plans</h1>
-            <p class="pricing-plans-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, odio?</p>
+            <p class="pricing-plans-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, odio? Lorem Ipsum.</p>
         
             <table>
                 <thead>
@@ -93,9 +93,10 @@
 
 
 .pricing-plans{
-    margin: 100px 0;
+    padding: 150px 0;
     background-image: url('../../../public/online-courses/page-background-img.png');
     background-position: top;
+    border-bottom: 1px solid lightgray;
 
     .pricing-plans-title{
         font-size: 60px;

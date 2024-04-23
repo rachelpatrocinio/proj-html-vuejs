@@ -7,6 +7,7 @@
     <LearningPossibilities />
     <OnlineCourses />
     <PricingPlans />
+    <AcademiesLogos />
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import StudentsReviews from './StudentsReviews.vue';
 import LearningPossibilities from './LearningPossibilities.vue';
 import OnlineCourses from './OnlineCourses.vue';
 import PricingPlans from './PricingPlans.vue';
+import AcademiesLogos from './AcademiesLogos.vue';
 
 
 export default {
@@ -29,7 +31,8 @@ export default {
         StudentsReviews,
         LearningPossibilities,
         OnlineCourses,
-        PricingPlans
+        PricingPlans,
+        AcademiesLogos
     }
 }
 </script>
