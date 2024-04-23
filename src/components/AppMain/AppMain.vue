@@ -8,6 +8,7 @@
     <OnlineCourses />
     <PricingPlans />
     <AcademiesLogos />
+    <UpButton/>
 </template>
 
 <script>
@@ -20,6 +21,7 @@ import LearningPossibilities from './LearningPossibilities.vue';
 import OnlineCourses from './OnlineCourses.vue';
 import PricingPlans from './PricingPlans.vue';
 import AcademiesLogos from './AcademiesLogos.vue';
+import UpButton from './UpButton.vue';
 
 
 export default {
@@ -32,7 +34,8 @@ export default {
         LearningPossibilities,
         OnlineCourses,
         PricingPlans,
-        AcademiesLogos
+        AcademiesLogos,
+        UpButton
     }
 }
 </script>
