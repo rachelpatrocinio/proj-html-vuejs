@@ -6,7 +6,10 @@
     </ul>
     <ul class="d-flex">
         <li class="icon-element"><font-awesome-icon :icon="['fas', 'magnifying-glass']" /></li>
-        <li class="icon-element"><font-awesome-icon :icon="['fas', 'bag-shopping']" /></li>
+        <li class="icon-element p-relative">
+            <font-awesome-icon :icon="['fas', 'bag-shopping']" />
+            <span class="cart-icon">0</span>
+        </li>
         <li class="icon-element"><font-awesome-icon :icon="['fas', 'bars']" /></li>
     </ul>
 </template>
@@ -38,6 +41,18 @@ export default {
 
     &:hover{
         color: $brand-light-color;
+    }
+
+    .cart-icon{
+        display: block;
+        border-radius: 99px;
+        background-color: $brand-color;
+        aspect-ratio: 1/1;
+        width: 15px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 

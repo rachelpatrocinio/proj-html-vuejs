@@ -46,10 +46,10 @@
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 .academy-subjects{
-    padding: 50px 0;
+    padding: 30px 0;
 
     .subject-card{
-        margin: 20px;
+        margin: 10px;
         padding: 70px 10px;
         border: 1px solid lightgray;
         background-color: $brand-light-bg;
