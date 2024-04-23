@@ -110,7 +110,7 @@ export default {
 }
 
 .colored{
-    color: $brand-light-color;
+    color: $gold-color;
 }
 
 .active{
