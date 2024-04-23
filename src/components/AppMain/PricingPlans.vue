@@ -95,7 +95,8 @@
 .pricing-plans{
     padding: 150px 0;
     background-image: url('../../../public/pricing-plans/page-background-img.png');
-    background-position: top;
+    background-position: 150px;
+    background-size: cover;
     border-bottom: 1px solid lightgray;
 
     .pricing-plans-title{

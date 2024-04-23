@@ -20,6 +20,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../../../public/hero-banner/course-9-f-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height:100vh;
     color: white;
 

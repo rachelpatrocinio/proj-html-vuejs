@@ -84,7 +84,7 @@ h1{
             }
 
             .footer-description{
-                font-size: 25px;
+                font-size: 20px;
                 margin-bottom: 30px;
             }
 
@@ -103,6 +103,10 @@ h1{
                 margin-bottom: 20px;
                 color: $lightest-gray;
 
+                h2{
+                    color: $light-gray;
+                }
+
                 p{
                     font-size: 20px;
                 }
@@ -113,6 +117,10 @@ h1{
             li{
                 font-size: 25px;
                 color: $lightest-gray;
+
+                &:hover{
+                    color: $brand-color;
+                }
             }
         }
 
