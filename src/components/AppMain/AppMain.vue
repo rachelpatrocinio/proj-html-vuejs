@@ -6,6 +6,7 @@
     <StudentsReviews />
     <LearningPossibilities />
     <OnlineCourses />
+    <PricingPlans />
 </template>
 
 <script>
@@ -16,6 +17,7 @@ import EmpoweringChildren from './EmpoweringChildren.vue';
 import StudentsReviews from './StudentsReviews.vue';
 import LearningPossibilities from './LearningPossibilities.vue';
 import OnlineCourses from './OnlineCourses.vue';
+import PricingPlans from './PricingPlans.vue';
 
 
 export default {
@@ -26,7 +28,8 @@ export default {
         EmpoweringChildren,
         StudentsReviews,
         LearningPossibilities,
-        OnlineCourses
+        OnlineCourses,
+        PricingPlans
     }
 }
 </script>
