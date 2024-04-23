@@ -35,15 +35,17 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 .learning-possibilities{
     margin: 100px 0;
     padding: 50px;
-    color: gray;
+    color: $light-gray;
 
     .aside-list{
         padding: 30px;
-        border: 1px solid lightgray;
+        border: 1px solid $lightest-gray;
         border-bottom: none;
         cursor: pointer;
         font-size: 20px;
@@ -59,7 +61,7 @@
     }
 
     .aside-list:last-child{
-        border-bottom: 1px solid lightgray;
+        border-bottom: 1px solid $lightest-gray;
     }
 
     .col-9{
@@ -68,14 +70,11 @@
         .learning-possibilities-title{
             font-size: 60px;
             margin-top: 15px;
-            color: black;
+            color: $dark-color;
         }
 
         .learning-possibilities-description{
-            color: gray;
-            margin-top: 40px;
-            font-size: 20px;
-            line-height: 30px;
+            @include paragraph-descriptions;
         }
 
         .checks{
@@ -95,7 +94,6 @@
         img{
             width: 150px;
             object-fit: contain;
-
         }
     }
 }

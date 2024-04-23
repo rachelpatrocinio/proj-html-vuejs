@@ -38,6 +38,7 @@ export default {
 
         .subject-title{
             margin-top: 20px;
+            color: $dark-color;
         }
     }
 }

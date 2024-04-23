@@ -90,6 +90,8 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 
 .pricing-plans{
@@ -97,18 +99,17 @@
     background-image: url('../../../public/pricing-plans/page-background-img.png');
     background-position: 150px;
     background-size: cover;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $lightest-gray;
 
     .pricing-plans-title{
         font-size: 60px;
         text-align: center;
+        color: $dark-color;
     }
 
     .pricing-plans-description{
-        color: gray;
-        margin-top: 30px;
-        font-size: 20px;
-        line-height: 30px;
+        color: $light-gray;
+        @include paragraph-descriptions;
         text-align: center;
     }
 }
@@ -125,10 +126,11 @@ table{
 
         th{
             border-top: 10px solid $brand-light-color;
-            border-left: 1px solid lightgray;
-            border-bottom: 1px solid lightgray;
+            border-left: 1px solid $lightest-gray;
+            border-bottom: 1px solid $lightest-gray;
             padding: 50px 0;
             width: calc(100% / 4);
+            color: $dark-color;
     
 
             &:first-child{
@@ -149,13 +151,13 @@ table{
     }
 
     tbody{
-        color: gray;
+        color: $light-gray;
 
         td{
             padding: 20px;
             font-size: 20px;
-            border-bottom: 1px solid lightgray;
-            border-left: 1px solid lightgray;
+            border-bottom: 1px solid $lightest-gray;
+            border-left: 1px solid $lightest-gray;
             text-align: center;
 
             &:first-child{
@@ -163,7 +165,7 @@ table{
             }
 
             &:last-child{
-                border-right: 1px solid lightgray;
+                border-right: 1px solid $lightest-gray;
             }
         }
     }
@@ -178,12 +180,12 @@ table{
 
             &:not(:first-child){
             background-color: $brand-lightest-color;
-            border-bottom: 1px solid lightgray;
-            border-left: 1px solid lightgray;
+            border-bottom: 1px solid $lightest-gray;
+            border-left: 1px solid $lightest-gray;
             }
 
             &:last-child{
-                border-right: 1px solid lightgray;
+                border-right: 1px solid $lightest-gray;
             }
         }
     }
@@ -193,7 +195,8 @@ table{
 button{
     background-color: white;
     padding: 20px;
-    border: 1px solid lightgray;
+    border: 1px solid $lightest-gray;
+    color: $dark-color;
 }
 
 button.active{

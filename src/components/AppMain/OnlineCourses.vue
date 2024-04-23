@@ -96,52 +96,56 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 .online-courses{
     padding: 150px 0;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid $lightest-gray;
+    border-bottom: 1px solid $lightest-gray;
     background-image: url('../../../public/online-courses/page-background-img.png');
     background-position: bottom;
  
     .online-courses-title{
         font-size: 60px;
         text-align: center;
+        color: $dark-color;
     }
 
     .online-courses-description{
-        color: gray;
-        margin-top: 40px;
-        font-size: 20px;
-        line-height: 30px;
+        color: $light-gray;
+        @include paragraph-descriptions;
         text-align: center;
     }
 
     .card{
         margin: 30px;
         margin-top: 100px;
-        border: 1px solid lightgrey;
+        border: 1px solid $lightest-gray;
 
         .card-body{
             background-color: white;
             padding: 20px;
             margin-top: 10px;
 
+            h3{
+                color: $dark-color;
+            }
+
             h4{
                 margin-top: 10px;
-                color: lightgrey;
+                color: $lightest-gray;
             }
 
             .card-body-description{
-                color: gray;
-                margin-top: 40px;
+                color: $light-gray;
+                @include paragraph-descriptions;
                 font-size: 18px;
-                line-height: 30px;
             }
 
             .card-icons{
                 margin-top: 40px;
-                color: gray;
+                color: $light-gray;
 
                 p{
                     margin: 0 7px;

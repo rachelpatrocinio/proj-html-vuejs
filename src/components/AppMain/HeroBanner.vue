@@ -20,6 +20,7 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
 
 .hero-banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../../../public/hero-banner/course-9-f-img.jpg');
@@ -39,8 +40,7 @@
         }
 
         .hero-description{
-            margin-top: 30px;
-            font-size: 20px;
+            @include paragraph-descriptions;
         }
 
         button{

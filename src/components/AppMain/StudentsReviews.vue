@@ -46,6 +46,8 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 .students-reviews{
     // background-color: $brand-color;
@@ -73,9 +75,7 @@ export default {
             }
         
             .student-review{
-                font-size: 20px;
-                margin-top: 30px;
-                line-height: 30px;
+                @include paragraph-descriptions;
             }
 
             .student-name{

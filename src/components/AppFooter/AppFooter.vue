@@ -64,6 +64,7 @@ export default {
 h1{
     margin-bottom: 50px;
     line-height: 60px;
+    font-size: 30px;
 }
 
 .main-footer{
@@ -101,10 +102,10 @@ h1{
         .courses{
             li{
                 margin-bottom: 20px;
-                color: $lightest-gray;
+                color: $light-gray;
 
                 h2{
-                    color: $light-gray;
+                    color: $lightest-gray;
                 }
 
                 p{
@@ -115,7 +116,7 @@ h1{
 
         .support{
             li{
-                font-size: 25px;
+                font-size: 20px;
                 color: $lightest-gray;
 
                 &:hover{

@@ -26,6 +26,8 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 .empowering-children{
     padding: 50px;
@@ -34,13 +36,12 @@
         padding: 20px;
         .children-potential-title{
             font-size: 60px;
+            color: $dark-color;
         }
 
         .children-potential-description{
-            font-size: 20px;
-            margin-top: 20px;
-            color: gray;
-            line-height: 30px;
+            @include paragraph-descriptions;
+            color: $light-gray;
         }
 
         .numbers{

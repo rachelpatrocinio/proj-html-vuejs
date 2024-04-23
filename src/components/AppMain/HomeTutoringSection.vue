@@ -11,19 +11,20 @@
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
 
 .home-tutoring{
     padding: 50px;
         
     .home-tutoring-title{
         font-size: 60px;
+        color: $dark-color;
     }
 
     .home-tutoring-description{
-        font-size: 20px;
-        margin-top: 20px;
-        color: gray;
-        line-height: 30px;
+        @include paragraph-descriptions;
+        color: $light-gray;
     }
 
     a{
