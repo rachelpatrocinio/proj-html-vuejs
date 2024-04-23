@@ -22,7 +22,7 @@
                             <li><font-awesome-icon class="check" :icon="['fas', 'check']" />The trusted name for specialized training.</li>
                             <li><font-awesome-icon class="check" :icon="['fas', 'check']" />People teach. People learn. This is where they connect.</li>
                         </ul>
-                        <figure class="col-4 d-flex align-items-end">
+                        <figure class="col-4 d-flex justify-content-end align-items-end">
                             <img src="../../../public/learning-possibilities/h12-tabs-icon-1.png">
                         </figure>
                     </div>
@@ -83,6 +83,7 @@
 
             li{
                 padding: 10px 0;
+                display: flex;
             }
 
             .check{
