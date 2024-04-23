@@ -5,6 +5,7 @@
     <EmpoweringChildren />
     <StudentsReviews />
     <LearningPossibilities />
+    <OnlineCourses />
 </template>
 
 <script>
@@ -14,6 +15,8 @@ import HomeTutoringSection from './HomeTutoringSection.vue';
 import EmpoweringChildren from './EmpoweringChildren.vue';
 import StudentsReviews from './StudentsReviews.vue';
 import LearningPossibilities from './LearningPossibilities.vue';
+import OnlineCourses from './OnlineCourses.vue';
+
 
 export default {
     components:{
@@ -22,7 +25,8 @@ export default {
         HomeTutoringSection,
         EmpoweringChildren,
         StudentsReviews,
-        LearningPossibilities
+        LearningPossibilities,
+        OnlineCourses
     }
 }
 </script>
