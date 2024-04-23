@@ -1,5 +1,5 @@
 <template>
-    <section class="online-courses">
+    <section class="online-courses" id="courses">
         <div class="container-xxl">
             <div class="row d-flex flex-wrap">
                 <div class="col-12">

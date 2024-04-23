@@ -9,11 +9,11 @@ export const store = reactive ({
         },
         {
             name: 'COURSES',
-            src: '#'
+            src: '#courses'
         },
         {
             name: 'INSTRUCTORS',
-            src: '#'
+            src: '#instructors'
         },
         {
             name: 'EVENTS',

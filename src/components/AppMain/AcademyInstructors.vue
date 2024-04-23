@@ -1,10 +1,10 @@
 <template>
-    <section class="students-reviews">
+    <section class="academy-instructors" id="instructors">
         <div class="container-lg">
             <div class="row">
                 <div class="slider">
                     <div class="slider-item" :class="i === this.store.currentSlideIndex ? 'active' : 'd-none' "  v-for="(singleReview,i) in this.store.reviews" :key="i">
-                        <img :src="`../../../public/students-reviews/${singleReview.img}`" alt="student">
+                        <img :src="`../../../public/instructors/${singleReview.img}`" alt="student">
                         <p class="student-review">{{ singleReview.review }}</p>
                         <p class="student-name">{{ singleReview.name }}</p>
                         <p class="dots">
@@ -49,9 +49,9 @@ export default {
 @use '../../styles/partials/mixins' as *;
 
 
-.students-reviews{
+.academy-instructors{
     // background-color: $brand-color;
-    background-image: url('../../../public/students-reviews/interactive-map-slider-img-1.png');
+    background-image: url('../../../public/instructors/interactive-map-slider-img-1.png');
     background-color: $brand-color;
     background-repeat: no-repeat;
     background-size: cover;

@@ -3,7 +3,7 @@
     <AcademySubjectsSection />
     <HomeTutoringSection />
     <EmpoweringChildren />
-    <StudentsReviews />
+    <AcademyInstructors />
     <LearningPossibilities />
     <OnlineCourses />
     <PricingPlans />
@@ -16,7 +16,7 @@ import HeroBanner from './HeroBanner.vue';
 import AcademySubjectsSection from './AcademySubjectsSection.vue';
 import HomeTutoringSection from './HomeTutoringSection.vue';
 import EmpoweringChildren from './EmpoweringChildren.vue';
-import StudentsReviews from './StudentsReviews.vue';
+import AcademyInstructors from './AcademyInstructors.vue';
 import LearningPossibilities from './LearningPossibilities.vue';
 import OnlineCourses from './OnlineCourses.vue';
 import PricingPlans from './PricingPlans.vue';
@@ -30,7 +30,7 @@ export default {
         AcademySubjectsSection,
         HomeTutoringSection,
         EmpoweringChildren,
-        StudentsReviews,
+        AcademyInstructors,
         LearningPossibilities,
         OnlineCourses,
         PricingPlans,
