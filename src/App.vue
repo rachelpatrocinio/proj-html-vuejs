@@ -1,7 +1,7 @@
 <template>
-  <AppHeader :menu="this.menu"/>
+  <AppHeader :menu="this.menuHeader"/>
   <AppMain />
-  <AppFooter />
+  <AppFooter :courses="this.popularCourses" :support="this.support"/>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
   },
   data(){
     return{
-      menu: [
+      menuHeader: [
         {
             name: 'HOME',
             src: '#'
@@ -41,6 +41,42 @@ export default {
         {
             name: 'ELEMENTS',
             src: '#'
+        }
+      ],
+      popularCourses: [
+        {
+          subject: 'Business English',
+          name: 'Preston Marshall'
+        },
+        {
+          subject: 'Social Computing',
+          name: 'David Sanders'
+        },
+        {
+          subject: 'Learn Spanish',
+          name: 'Jennie King'
+        },
+      ],
+      support: [
+        {
+          name: 'User Dashboard',
+          src: '#'
+        },
+        {
+          name: 'Contact Us',
+          src: '#'
+        },
+        {
+          name: 'FAQ',
+          src: '#'
+        },
+        {
+          name: 'Course Offer',
+          src: '#'
+        },
+        {
+          name: 'Events',
+          src: '#'
         }
       ]
     }

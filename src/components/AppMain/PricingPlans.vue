@@ -76,7 +76,7 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                    <td></td>
+                    <td class="empty"></td>
                     <td><button>GET IT NOW</button></td>
                     <td><button class="active">GET IT NOW</button></td>
                     <td><button>GET IT NOW</button></td>
@@ -94,7 +94,7 @@
 
 .pricing-plans{
     padding: 150px 0;
-    background-image: url('../../../public/online-courses/page-background-img.png');
+    background-image: url('../../../public/pricing-plans/page-background-img.png');
     background-position: top;
     border-bottom: 1px solid lightgray;
 
@@ -183,7 +183,6 @@ table{
             &:last-child{
                 border-right: 1px solid lightgray;
             }
-
         }
     }
 }
