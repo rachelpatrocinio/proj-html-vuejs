@@ -76,7 +76,7 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                    <td class="empty"></td>
+                    <td></td>
                     <td><button>GET IT NOW</button></td>
                     <td><button class="active">GET IT NOW</button></td>
                     <td><button>GET IT NOW</button></td>
@@ -118,6 +118,7 @@ table{
     width: 100%;
     background-color: white;
     border-collapse: collapse;
+    empty-cells: hide;
 
     thead{
         font-size: 30px;
