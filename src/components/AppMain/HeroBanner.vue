@@ -1,10 +1,15 @@
 <template>
     <section class="hero-banner">
-        <div class="container-xxl">
+        <div class="container-xl">
             <div class="row">
                 <h1 class="hero-title"> Contemporary Ideas</h1>
                 <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum numquam ea excepturi laudantium, tempore voluptas ratione odio mollitia corrupti perspiciatis magnam, reprehenderit laboriosam accusantium temporibus iusto minima?</p>
                 <button> REGISTER NOW </button>
+                <div class="dots">
+                    <span class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
+                    <span class="dot"><font-awesome-icon :icon="['fas', 'circle']" /></span>
+                    <span class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
+                </div>
             </div>
         </div>
     </section>
@@ -23,10 +28,11 @@
     background-position: center;
     height:100vh;
     color: white;
+    position: relative;
     
     .row{
         text-align: center;
-        padding: 300px 200px;
+        padding: 300px 0;
         
         .hero-title{
             font-size: 80px;
@@ -51,6 +57,16 @@
             }
         }
     }
+}
+
+
+.dots{
+    margin-top: 300px;
+}
+
+.dot{
+    color: white;
+    padding: 5px;
 }
 
 </style>
