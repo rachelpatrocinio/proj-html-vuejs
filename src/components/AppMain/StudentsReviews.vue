@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="slider">
                     <div class="slider-item" :class="i === this.store.currentSlideIndex ? 'active' : 'd-none' "  v-for="(singleReview,i) in this.store.reviews" :key="i">
-                        <img :src="`../../../public/students-reviews/${singleReview.src}`" alt="student">
+                        <img :src="`../../../public/students-reviews/${singleReview.img}`" alt="student">
                         <p class="student-review">{{ singleReview.review }}</p>
                         <p class="student-name">{{ singleReview.name }}</p>
                         <p class="dots">

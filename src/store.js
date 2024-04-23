@@ -68,17 +68,43 @@ export const store = reactive ({
         {
             review: 'Lorem ipsum dolor nsectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
             name: 'Jamilla Lowy',
-            src: 'h5-team-member-2.jpg'
+            img: 'h5-team-member-2.jpg'
         },
         {
             review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
             name: 'Joan Collins',
-            src: 'instructor-img-6.jpg'
+            img: 'instructor-img-6.jpg'
         },
         {
             review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
             name: 'Jonathan Bullshof',
-            src:'h5-team-member-3.jpg'
+            img:'h5-team-member-3.jpg'
+        }
+      ],
+      subjects:[
+        {
+          subject: 'Languages',
+          img: 'h5-custom-icon-1.png'
+        },
+        {
+          subject: 'Software',
+          img: 'h5-custom-icon-2.png'
+        },
+        {
+          subject: 'Business',
+          img: 'h5-custom-icon-3.png'
+        },
+        {
+          subject: 'Chemistry',
+          img: 'h5-custom-icon-4.png'
+        },
+        {
+          subject: 'Science',
+          img: 'h5-custom-icon-5.png'
+        },
+        {
+          subject: 'DIY & Craft',
+          img: 'h5-custom-icon-6.png'
         }
       ]
 })
