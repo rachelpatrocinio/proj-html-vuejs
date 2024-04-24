@@ -73,7 +73,7 @@ export default {
           
             img{
                 border-radius: 999px; 
-                width: 200px;
+                width: 180px;
                 display: block;
                 margin: 0 auto;
             }

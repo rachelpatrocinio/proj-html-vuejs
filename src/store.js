@@ -84,19 +84,19 @@ export const store = reactive ({
     ],
     reviews: [
         {
-            review: 'Lorem ipsum dolor nsectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
+            review: '" Lorem ipsum dolor nsectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum! "',
             name: 'Jamilla Lowy',
-            img: 'h5-team-member-2.jpg'
+            img: 'testimonials-standard-1.png'
         },
         {
-            review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
+            review: '" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum! "',
             name: 'Joan Collins',
-            img: 'instructor-img-6.jpg'
+            img: 'testimonials-standard-2.png'
         },
         {
-            review: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
+            review: '" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum! "',
             name: 'Jonathan Bullshof',
-            img:'h5-team-member-3.jpg'
+            img:'testimonials-standard-3.png'
         }
     ],
     subjects:[
