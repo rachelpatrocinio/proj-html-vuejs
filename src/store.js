@@ -151,5 +151,23 @@ export const store = reactive ({
           checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
           img: 'h12-tabs-icon-6.png'
         }
+      ],
+      academyLogos:[
+        {
+          img:'h5-client-5.png',
+          name: 'iAcademy'
+        },
+        {
+          img:'h5-client-1.png',
+          name: 'Student Central University'
+        },
+        {
+          img:'h5-client-2.png',
+          name: 'Educator'
+        },
+        {
+          img:'h5-client-1.png',
+          name: 'Student Central University'
+        }        
       ]
 })

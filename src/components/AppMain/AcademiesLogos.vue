@@ -2,22 +2,25 @@
     <section class="academies-logos">
         <div class="container-xxl">
             <div class="row d-flex flex-wrap">
-                <div class="col-3 col-sm-12">
-                    <img src="../../../public/academies-logos/h5-client-5.png" alt="">
-                </div>
-                <div class="col-3 col-sm-12">
-                    <img src="../../../public/academies-logos/h5-client-1.png" alt="">
-                </div>
-                <div class="col-3 col-sm-12">
-                    <img src="../../../public/academies-logos/h5-client-2.png" alt="">
-                </div>
-                <div class="col-3 col-sm-12">
-                    <img src="../../../public/academies-logos/h5-client-1.png" alt="">
+                <div class="col-3 col-sm-12" v-for="logo in this.store.academyLogos">
+                    <img :src="`../../../public/academies-logos/${logo.img}`" :alt="logo.name">
                 </div>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+import {store} from '../../store.js';
+
+export default {
+    data(){
+        return{
+            store
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 .row{
