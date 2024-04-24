@@ -11,8 +11,8 @@
                         <font-awesome-icon :icon="['far', 'circle']" v-else/>
                     </span>
                 </div>
-                <div class="prev" @click="prev"><font-awesome-icon :icon="['fas', 'chevron-left']" /></div>
-                <div class="next" @click="next"><font-awesome-icon :icon="['fas', 'chevron-right']" /></div>
+                <div class="prev" @mouseover="stopSlider" @mouseleave="playSlider" @click="prev"><font-awesome-icon :icon="['fas', 'chevron-left']" /></div>
+                <div class="next" @mouseover="stopSlider" @mouseleave="playSlider" @click="next"><font-awesome-icon :icon="['fas', 'chevron-right']" /></div>
             </div>
         </div>
     </section>
@@ -23,34 +23,39 @@ import {store} from '../../store.js';
 export default {
     data(){
         return{
-            store
+            store,
+            interval: ''
         }
     },
     methods:{
         next(){
-            this.stopSlider();
             this.store.currentSlideIndex++;
             if(this.store.currentSlideIndex === this.store.reviews.length){
                 this.store.currentSlideIndex = 0
             }
             // console.log(this.store.currentSlideIndex)
             const heroBanner = document.querySelector('.hero-banner');
-            heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;       
+            heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;  
         },
         prev(){
-            this.stopSlider();
             this.store.currentSlideIndex--;
             if(this.store.currentSlideIndex < 0){
                 this.store.currentSlideIndex = this.store.reviews.length-1
             }
             // console.log(this.store.currentSlideIndex)
             const heroBanner = document.querySelector('.hero-banner');
-            heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;       
+            heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;    
+        },
+        playSlider(){
+            this.interval = setInterval(this.next, 3000) 
+        },
+        stopSlider(){
+            clearInterval(this.interval);
+            this.interval = ''
         }
     },
     mounted(){
-        setInterval(this.next, 3000)
-
+        this.playSlider();
         const heroBanner = document.querySelector('.hero-banner');
         heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;  
     }
