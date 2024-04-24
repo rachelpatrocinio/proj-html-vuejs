@@ -28,8 +28,22 @@ export const store = reactive ({
             name: 'ELEMENTS',
             src: '#'
         }
-      ],
-      popularCourses: [
+    ],
+    heroBannerImgs:[
+      {
+        img: 'course-7-f-img.jpg',
+        name: 'woman with curly hairs'
+      },
+      {
+        img: 'course-9-f-img.jpg',
+        name: 'man typing on pc'
+      },
+      {
+        img: 'course-8-f-img.jpg',
+        name: 'woman with photocamera'
+      },
+    ],
+    popularCourses: [
         {
           subject: 'Business English',
           name: 'Preston Marshall'
@@ -42,8 +56,8 @@ export const store = reactive ({
           subject: 'Learn Spanish',
           name: 'Jennie King'
         },
-      ],
-      support: [
+    ],
+    support: [
         {
           name: 'User Dashboard',
           src: '#'
@@ -64,8 +78,8 @@ export const store = reactive ({
           name: 'Events',
           src: '#'
         }
-      ],
-      reviews: [
+    ],
+    reviews: [
         {
             review: 'Lorem ipsum dolor nsectetur, adipisicing elit. Repellat harum cumque quo ipsum obcaecati repudiandae, nihil consequatur et laboriosam expedita laborum! Labore accusantium quia fugit quis delectus et minima aut quibusdam maiores commodi incidunt, accusamus illum!',
             name: 'Jamilla Lowy',
@@ -81,8 +95,8 @@ export const store = reactive ({
             name: 'Jonathan Bullshof',
             img:'h5-team-member-3.jpg'
         }
-      ],
-      subjects:[
+    ],
+    subjects:[
         {
           subject: 'Languages',
           img: 'h5-custom-icon-1.png'
@@ -107,8 +121,8 @@ export const store = reactive ({
           subject: 'DIY & Craft',
           img: 'h5-custom-icon-6.png'
         }
-      ],
-      learningPossibilities:[
+    ],
+    learningPossibilities:[
         {
           object: 'What We Do',
           title: 'Learning Possibilities',
@@ -151,8 +165,8 @@ export const store = reactive ({
           checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
           img: 'h12-tabs-icon-6.png'
         }
-      ],
-      academyLogos:[
+    ],
+    academyLogos:[
         {
           img:'h5-client-5.png',
           name: 'iAcademy'
@@ -169,5 +183,5 @@ export const store = reactive ({
           img:'h5-client-1.png',
           name: 'Student Central University'
         }        
-      ]
+    ]
 })

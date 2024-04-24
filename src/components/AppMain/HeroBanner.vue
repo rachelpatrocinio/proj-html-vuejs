@@ -10,12 +10,46 @@
                     <span class="dot"><font-awesome-icon :icon="['fas', 'circle']" /></span>
                     <span class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
                 </div>
+                <div class="prev" @click="prev"><font-awesome-icon :icon="['fas', 'chevron-left']" /></div>
+                <div class="next" @click="next"><font-awesome-icon :icon="['fas', 'chevron-right']" /></div>
             </div>
         </div>
     </section>
 </template>
 
 <script>
+import {store} from '../../store.js';
+export default {
+    data(){
+        return{
+            store
+        }
+    },
+    methods:{
+        next(){
+            this.store.currentSlideIndex++;
+            if(this.store.currentSlideIndex === this.store.reviews.length){
+                this.store.currentSlideIndex = 0
+            }
+            // console.log(this.store.currentSlideIndex)
+            const heroBanner = document.querySelector('.hero-banner');
+            heroBanner.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../../../public/hero-banner/${this.store.heroBannerImgs[this.store.currentSlideIndex].img}')`;       
+        },
+        prev(){
+            this.store.currentSlideIndex--;
+            if(this.store.currentSlideIndex < 0){
+                this.store.currentSlideIndex = this.store.reviews.length-1
+            }
+            // console.log(this.store.currentSlideIndex)
+            const heroBanner = document.querySelector('.hero-banner');
+            heroBanner.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../../../public/hero-banner/${this.store.heroBannerImgs[this.store.currentSlideIndex].img}')`;       
+        }
+    },
+    mounted(){
+        const heroBanner = document.querySelector('.hero-banner');
+        heroBanner.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../../../public/hero-banner/${this.store.heroBannerImgs[this.store.currentSlideIndex].img}')`;       
+    }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -23,7 +57,7 @@
 @use '../../styles/partials/mixins' as *;
 
 .hero-banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../../../public/hero-banner/course-9-f-img.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,6 +89,20 @@
             &:hover{
                 background-color: $brand-light-color;
             }
+        }
+
+        .prev{
+            position: absolute;
+            font-size: 20px;
+            left: 40px;
+            top:50%;
+        }
+            
+        .next{
+            position: absolute;
+            font-size: 20px;
+            right: 40px;
+            top:50%;
         }
     }
 }

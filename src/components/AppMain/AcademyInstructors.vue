@@ -26,7 +26,7 @@ export default {
         prev(){
             this.store.currentSlideIndex--;
             if(this.store.currentSlideIndex < 0){
-                this.store.currentSlideIndex = 2
+                this.store.currentSlideIndex = this.store.reviews.length-1
             }
         },
         next(){
