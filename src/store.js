@@ -29,18 +29,21 @@ export const store = reactive ({
             src: '#'
         }
     ],
-    heroBannerImgs:[
+    heroBanner:[
       {
-        img: 'course-7-f-img.jpg',
-        name: 'woman with curly hairs'
+        title: 'Accelerate Your Career',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum numquam ea excepturi laudantium, tempore voluptas ratione odio mollitia corrupti perspiciatis magnam, reprehenderit laboriosam accusantium temporibus iusto minima',
+        img: 'h5-slide-1-background.jpg'
       },
       {
-        img: 'course-9-f-img.jpg',
-        name: 'man typing on pc'
+        title: 'Contemporary Ideas',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum numquam ea excepturi laudantium, tempore voluptas ratione odio mollitia corrupti perspiciatis magnam, reprehenderit laboriosam accusantium temporibus iusto minima',
+        img: 'h5-slide-3-background.jpg'
       },
       {
-        img: 'course-8-f-img.jpg',
-        name: 'woman with photocamera'
+        title: 'Home Learning',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum numquam ea excepturi laudantium, tempore voluptas ratione odio mollitia corrupti perspiciatis magnam, reprehenderit laboriosam accusantium temporibus iusto minima',
+        img: 'h3-slide-1-background.jpg'
       },
     ],
     popularCourses: [
