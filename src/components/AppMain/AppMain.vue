@@ -1,7 +1,7 @@
 <template>
     <HeroBanner />
-    <AcademySubjectsSection />
-    <HomeTutoringSection />
+    <AcademySubjects />
+    <HomeTutoring />
     <EmpoweringChildren />
     <AcademyInstructors />
     <LearningPossibilities />
@@ -13,8 +13,8 @@
 
 <script>
 import HeroBanner from './HeroBanner.vue';
-import AcademySubjectsSection from './AcademySubjectsSection.vue';
-import HomeTutoringSection from './HomeTutoringSection.vue';
+import AcademySubjects from './AcademySubjects.vue';
+import HomeTutoring from './HomeTutoring.vue';
 import EmpoweringChildren from './EmpoweringChildren.vue';
 import AcademyInstructors from './AcademyInstructors.vue';
 import LearningPossibilities from './LearningPossibilities.vue';
@@ -27,8 +27,8 @@ import UpButton from './UpButton.vue';
 export default {
     components:{
         HeroBanner,
-        AcademySubjectsSection,
-        HomeTutoringSection,
+        AcademySubjects,
+        HomeTutoring,
         EmpoweringChildren,
         AcademyInstructors,
         LearningPossibilities,

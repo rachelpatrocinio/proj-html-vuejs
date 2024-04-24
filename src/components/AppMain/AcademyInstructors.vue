@@ -3,10 +3,10 @@
         <div class="container-lg">
             <div class="row">
                 <div class="slider">
-                    <div class="slider-item" :class="i === this.store.currentSlideIndex ? 'active' : 'd-none' "  v-for="(singleReview,i) in this.store.reviews" :key="i">
+                    <div class="slider-item col-md-6" :class="i === this.store.currentSlideIndex ? 'active' : 'd-none' "  v-for="(singleReview,i) in this.store.reviews" :key="i">
                         <img :src="`../../../public/instructors/${singleReview.img}`" alt="student">
-                        <p class="student-review">{{ singleReview.review }}</p>
-                        <p class="student-name">{{ singleReview.name }}</p>
+                        <p class="instructor-review">{{ singleReview.review }}</p>
+                        <p class="instructor-name">{{ singleReview.name }}</p>
                         <p class="dots">
                             <span  v-for="(singleReview,i) in this.store.reviews" :key="i" @click="this.store.currentSlideIndex = i" :class="i === this.store.currentSlideIndex ? 'colored': ''" class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
                         </p>
@@ -66,6 +66,7 @@ export default {
         text-align: center;
 
         .slider-item{
+            margin: 0 auto;
           
             img{
                 border-radius: 999px; 
@@ -74,11 +75,11 @@ export default {
                 margin: 0 auto;
             }
         
-            .student-review{
+            .instructor-review{
                 @include paragraph-descriptions;
             }
 
-            .student-name{
+            .instructor-name{
                 font-size: 20px;
                 margin-top: 30px;
             }
