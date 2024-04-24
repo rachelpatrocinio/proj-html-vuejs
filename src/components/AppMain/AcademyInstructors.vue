@@ -3,12 +3,15 @@
         <div class="container-lg">
             <div class="row">
                 <div class="slider">
-                    <div class="slider-item col-md-6" :class="i === this.store.currentSlideIndex ? 'active' : 'd-none' "  v-for="(singleReview,i) in this.store.reviews" :key="i">
+                    <div class="slider-item col-md-6" :class="i === this.store.currentSlideIndex ? 'd-block' : 'd-none' "  v-for="(singleReview,i) in this.store.reviews" :key="i">
                         <img :src="`../../../public/instructors/${singleReview.img}`" alt="student">
                         <p class="instructor-review">{{ singleReview.review }}</p>
                         <p class="instructor-name">{{ singleReview.name }}</p>
                         <p class="dots">
-                            <span  v-for="(singleReview,i) in this.store.reviews" :key="i" @click="this.store.currentSlideIndex = i" :class="i === this.store.currentSlideIndex ? 'colored': ''" class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
+                            <span  v-for="(singleReview,i) in this.store.reviews" :key="i" @click="this.store.currentSlideIndex = i" class="dot">
+                                <font-awesome-icon :icon="['fas', 'circle']" v-if="i === this.store.currentSlideIndex"/>
+                                <font-awesome-icon :icon="['far', 'circle']" v-else/>
+                            </span>
                         </p>
                         <div class="prev" @click="prev"><font-awesome-icon :icon="['fas', 'chevron-left']" /></div>
                         <div class="next" @click="next"><font-awesome-icon :icon="['fas', 'chevron-right']" /></div>
@@ -108,17 +111,5 @@ export default {
             }
         }
     }
-}
-
-.colored{
-    color: $gold-color;
-}
-
-.active{
-    display: block;
-}
-
-.d-none{
-    display: none;
 }
 </style>

@@ -6,9 +6,10 @@
                 <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum numquam ea excepturi laudantium, tempore voluptas ratione odio mollitia corrupti perspiciatis magnam, reprehenderit laboriosam accusantium temporibus iusto minima?</p>
                 <button> REGISTER NOW </button>
                 <div class="dots">
-                    <span class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
-                    <span class="dot"><font-awesome-icon :icon="['fas', 'circle']" /></span>
-                    <span class="dot"><font-awesome-icon :icon="['far', 'circle']" /></span>
+                    <span v-for="(img,i) in this.store.heroBannerImgs" :key="i" class="dot">
+                        <font-awesome-icon :icon="['fas', 'circle']" v-if="i === this.store.currentSlideIndex"/>
+                        <font-awesome-icon :icon="['far', 'circle']" v-else/>
+                    </span>
                 </div>
                 <div class="prev" @click="prev"><font-awesome-icon :icon="['fas', 'chevron-left']" /></div>
                 <div class="next" @click="next"><font-awesome-icon :icon="['fas', 'chevron-right']" /></div>
