@@ -4,26 +4,18 @@
             <div class="row d-flex flex-wrap">
                 <div class="col-4 col-md-12">
                     <ul class="aside">
-                        <li class="aside-list active"> What We Do</li>
-                        <li class="aside-list">Degree Progamme</li>
-                        <li class="aside-list">Career Achivements</li>
-                        <li class="aside-list">Personal Managment</li>
-                        <li class="aside-list">Steps To Success</li>
-                        <li class="aside-list">Knowledge Transfer</li>
+                        <li v-for="(element,i) in this.store.learningPossibilities" :key="i" class="aside-list" @click="this.store.currentIndex = i" :class="i === this.store.currentIndex ? 'active':''"> {{element.object}}</li>
                     </ul>
                 </div>
-                <div class="col-8 col-md-12">
-                    <h1 class="learning-possibilities-title">Learning Possibilities</h1>
-                    <p class="learning-possibilities-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!</p>
+                <div class="col-8 col-md-12 content" v-for="(element,i) in this.store.learningPossibilities" :key="i" :class="i === this.store.currentIndex ? 'd-block':'d-none'" >
+                    <h1 class="learning-possibilities-title">{{element.title}}</h1>
+                    <p class="learning-possibilities-description">{{element.description}}</p>
                     <div class="d-flex">
                         <ul class="checks col-8">
-                            <li><font-awesome-icon class="check" :icon="['fas', 'check']" />We enrich lives learning.</li>
-                            <li><font-awesome-icon class="check" :icon="['fas', 'check']" />Maximizing potential through individual attention.</li>
-                            <li><font-awesome-icon class="check" :icon="['fas', 'check']" />The trusted name for specialized training.</li>
-                            <li><font-awesome-icon class="check" :icon="['fas', 'check']" />People teach. People learn. This is where they connect.</li>
+                            <li v-for="check in element.checks" :key="i"><font-awesome-icon class="check" :icon="['fas', 'check']" />{{ check }}</li>
                         </ul>
                         <figure class="col-4 d-flex justify-content-end align-items-end">
-                            <img src="../../../public/learning-possibilities/h12-tabs-icon-1.png">
+                            <img :src="`../../../public/learning-possibilities/${element.img}`">
                         </figure>
                     </div>
                 </div>
@@ -32,6 +24,17 @@
 
     </section>
 </template>
+
+<script>
+import {store} from '../../store.js';
+export default {
+    data(){
+        return{
+            store
+        }
+    }
+}
+</script>
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
@@ -64,7 +67,7 @@
         border-bottom: 1px solid $lightest-gray;
     }
 
-    .col-8{
+    .content{
         padding: 0 50px;
 
         .learning-possibilities-title{
@@ -105,8 +108,4 @@
         margin-bottom: 50px;
     }
 }
-
-
-
-
 </style>

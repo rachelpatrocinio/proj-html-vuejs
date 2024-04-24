@@ -2,6 +2,7 @@ import { reactive } from 'vue';
 
 export const store = reactive ({
     currentSlideIndex: 1,
+    currentIndex: 0,
     menuHeader: [
         {
             name: 'HOME',
@@ -105,6 +106,50 @@ export const store = reactive ({
         {
           subject: 'DIY & Craft',
           img: 'h5-custom-icon-6.png'
+        }
+      ],
+      learningPossibilities:[
+        {
+          object: 'What We Do',
+          title: 'Learning Possibilities',
+          description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!',
+          checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
+          img: 'h12-tabs-icon-1.png'
+        },
+        {
+          object: 'Degree Progamme',
+          title: 'Learning Degree',
+          description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem. Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!',
+          checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
+          img: 'h12-tabs-icon-2.png'
+        },
+        {
+          object: 'Career Achivements',
+          title: 'Learning Achivements',
+          description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!',
+          checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
+          img: 'h12-tabs-icon-3.png'
+        },
+        {
+          object: 'Personal Managment',
+          title: 'Learning Management',
+          description:'Lorem ipsum dolor sit amet consectetur. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!',
+          checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
+          img: 'h12-tabs-icon-4.png'
+        },
+        {
+          object: 'Steps To Success',
+          title: 'Learning Success',
+          description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!',
+          checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
+          img: 'h12-tabs-icon-5.png'
+        },
+        {
+          object: 'Knowledge Transfer',
+          title: 'Learning Transfer',
+          description:'Amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!',
+          checks: ['We enrich lives learning.', 'Maximizing potential through individual attention.', 'The trusted name for specialized training.', 'People teach. People learn. This is where they connect.'],
+          img: 'h12-tabs-icon-6.png'
         }
       ]
 })
