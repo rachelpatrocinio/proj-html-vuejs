@@ -12,7 +12,7 @@
                         <li class="aside-list">Knowledge Transfer</li>
                     </ul>
                 </div>
-                <div class="col-9 col-md-12">
+                <div class="col-8 col-md-12">
                     <h1 class="learning-possibilities-title">Learning Possibilities</h1>
                     <p class="learning-possibilities-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!</p>
                     <div class="d-flex">
@@ -64,7 +64,7 @@
         border-bottom: 1px solid $lightest-gray;
     }
 
-    .col-9{
+    .col-8{
         padding: 0 50px;
 
         .learning-possibilities-title{
