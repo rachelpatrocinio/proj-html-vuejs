@@ -28,6 +28,7 @@ export default {
     },
     methods:{
         next(){
+            this.stopSlider();
             this.store.currentSlideIndex++;
             if(this.store.currentSlideIndex === this.store.reviews.length){
                 this.store.currentSlideIndex = 0
@@ -37,6 +38,7 @@ export default {
             heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;       
         },
         prev(){
+            this.stopSlider();
             this.store.currentSlideIndex--;
             if(this.store.currentSlideIndex < 0){
                 this.store.currentSlideIndex = this.store.reviews.length-1
@@ -47,8 +49,10 @@ export default {
         }
     },
     mounted(){
+        setInterval(this.next, 3000)
+
         const heroBanner = document.querySelector('.hero-banner');
-        heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;       
+        heroBanner.style.backgroundImage = `url('../../../public/hero-banner/${this.store.heroBanner[this.store.currentSlideIndex].img}')`;  
     }
 }
 </script>
