@@ -54,7 +54,8 @@ export default {
         font-size: 20px;
 
         &:hover{
-            background-color: $brand-light-color;
+            color: $brand-color;
+            border-left: 10px solid $brand-color;
         }
 
         &.active{
