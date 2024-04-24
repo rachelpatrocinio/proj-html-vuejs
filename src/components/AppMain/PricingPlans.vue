@@ -131,6 +131,10 @@ table{
             padding: 50px 0;
             width: calc(100% / 4);
             color: $dark-color;
+
+            &:hover{
+                border-top: 10px solid $brand-color;
+            }
     
 
             &:first-child{
@@ -197,6 +201,11 @@ button{
     padding: 20px;
     border: 1px solid $lightest-gray;
     color: $dark-color;
+
+    &:hover{
+        background-color: $brand-color;
+        color: white;
+    }
 }
 
 button.active{

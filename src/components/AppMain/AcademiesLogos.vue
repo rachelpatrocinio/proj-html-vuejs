@@ -21,7 +21,7 @@
 
 <style lang="scss" scoped>
 .row{
-    padding: 100px;
+    padding: 100px 0;
 }
 
 @media screen and (max-width: 768px) {
