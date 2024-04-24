@@ -6,7 +6,7 @@
                     <h1 class="online-courses-title">Popular Online Courses</h1>
                     <p class="online-courses-description">Lorem Ipsum etc kung papa load if then you can be a won full . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil tempore impedit quia ut molestiae enim. Accusantium voluptatum doloribus quos ex.</p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-sm-12">
                     <div class="card">
                         <div class="card-header">
                             <img src="../../../online-courses/course-5-f-img.jpg">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-sm-12">
                     <div class="card">
                         <div class="card-header">
                             <img src="../../../online-courses/course-6-f-img.jpg">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-sm-12">
                     <div class="card">
                         <div class="card-header">
                             <img src="../../../online-courses/course-12-f-img.jpg">

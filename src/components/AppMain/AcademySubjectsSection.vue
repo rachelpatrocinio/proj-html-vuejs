@@ -2,7 +2,7 @@
     <section class="academy-subjects">
         <div class="container-xxl">
             <div class="row d-flex flex-wrap">
-                <div class="col-2 col-md-4" v-for="(subject,i) in this.store.subjects" :key="i">
+                <div class="col-2 col-md-4 col-sm-6" v-for="(subject,i) in this.store.subjects" :key="i">
                     <div class="subject-card d-flex flex-column align-items-center" >
                         <img :src="`../../../public/subjects/${subject.img}`" alt="languages-subject-logo">
                         <h3 class="subject-title">{{ subject.subject }}</h3>
