@@ -1,8 +1,8 @@
 <template>
     <section class="learning-possibilities">
         <div class="container-xxl">
-            <div class="row d-flex">
-                <div class="col-4">
+            <div class="row d-flex flex-wrap">
+                <div class="col-4 col-md-12">
                     <ul class="aside">
                         <li class="aside-list active"> What We Do</li>
                         <li class="aside-list">Degree Progamme</li>
@@ -12,7 +12,7 @@
                         <li class="aside-list">Knowledge Transfer</li>
                     </ul>
                 </div>
-                <div class="col-9">
+                <div class="col-9 col-md-12">
                     <h1 class="learning-possibilities-title">Learning Possibilities</h1>
                     <p class="learning-possibilities-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos eum assumenda repellat consequuntur voluptatem amet quidem, fugiat libero illum! Atque error id perferendis eveniet nihil aperiam architecto nisi assumenda.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita doloribus atque voluptatum totam aperiam rem saepe iste dolor, magni esse officiis explicabo voluptate assumenda officia. Deserunt quis error illum velit!</p>
                     <div class="d-flex">
@@ -96,6 +96,13 @@
             width: 150px;
             object-fit: contain;
         }
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .aside{
+        margin-bottom: 50px;
     }
 }
 

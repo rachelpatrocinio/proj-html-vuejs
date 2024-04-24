@@ -59,7 +59,6 @@
     }
 }
 
-
 .dots{
     margin-top: 300px;
 }
@@ -68,5 +67,4 @@
     color: white;
     padding: 5px;
 }
-
 </style>

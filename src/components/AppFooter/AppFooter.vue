@@ -1,15 +1,15 @@
 <template>
     <footer class="main-footer">
         <div class="container-xxl">
-            <div class="row d-flex">
-                <div class="col-4 description">
+            <div class="row d-flex flex-wrap">
+                <div class="col-3 col-md-6 description">
                     <img src="../../../public/logo/footer-logo-1.png" alt="logo iAcademy">
                     <p class="footer-description">Providing Life Changing <br> Experiences Through <br> Education. Class That Fit Your <br> Busy Life. Closer to Home</p>
                     <p><font-awesome-icon :icon="['fas', 'phone-volume']" class="icon"/> 1-677-124-44227</p>
                     <p><font-awesome-icon :icon="['far', 'clock']" class="icon"/>Mon - Sat 8.00 - 18.00</p>
                 
                 </div>
-                <div class="col-4 courses">
+                <div class="col-3 col-md-6 courses">
                     <h1>Popular Courses</h1>
                     <ul>
                         <li v-for="course in courses">
@@ -18,7 +18,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-4 support">
+                <div class="col-3 col-md-6 support">
                     <h1>Support</h1>
                     <ul>
                         <li v-for="sup in support">
@@ -26,14 +26,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-4 flexible-learning">
+                <div class="col-3 col-md-6 flexible-learning">
                     <h1>Flexible Learning</h1>
                     <img src="../../../public/footer/footer-img-1.png" alt="world map">
                 </div>
             </div>
-            <div class="row d-flex justify-space-between">
-                <p>Copyrights 2017 <font-awesome-icon :icon="['far', 'copyright']" />Mikado Themes</p>
-                <ul class="d-flex">
+            <div class="row d-flex flex-wrap justify-space-between">
+                <p class="col-md-12">Copyrights 2017 <font-awesome-icon :icon="['far', 'copyright']" />Mikado Themes</p>
+                <ul class="d-flex col-12-md">
                     <li>CALL +44 300 303 0266</li>
                     <li>FOLLOW US</li>
                     <li><font-awesome-icon :icon="['fab', 'twitter']" /></li>
@@ -126,10 +126,6 @@ h1{
                 }
             }
         }
-
-        .flexible-learning{
-            text-align: center;
-        }
     }
 
     .row:last-child{
@@ -138,8 +134,18 @@ h1{
         font-size: 18px;
 
         li{
-            margin: 0 10px;
+            margin-right: 10px;
         }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .col-md-6{
+        margin-top: 30px;
+    }
+
+    .main-footer{
+        padding: 0 50px;
     }
 }
 </style>

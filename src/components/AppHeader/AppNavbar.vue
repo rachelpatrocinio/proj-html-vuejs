@@ -56,5 +56,12 @@ export default {
     }
 }
 
+@media screen and (max-width: 992px){
+
+    .menu-element{
+        display: none;
+    }
+}
+
 
 </style>

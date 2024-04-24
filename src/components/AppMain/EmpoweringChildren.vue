@@ -1,13 +1,13 @@
 <template>
     <section class="empowering-children">
         <div class="container-xxl">
-            <div class="row d-flex">
-                <div class="col-6">
+            <div class="row d-flex flex-wrap">
+                <div class="col-6 col-md-12">
                     <img src="../../../public/children-empowering/h5-img-2.jpg" alt="empowering-children">
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-md-12">
                     <h1 class="children-potential-title">Empowering <br> Children to Reach <br> Their Potencial.</h1>
-                    <p class="children-potential-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, rerum accusamus perferendis excepturi ab molestias quisquam perspiciatis quo quia? Pariatur molestiae quos, cupiditate distinctio perspiciatis maiores.</p>
+                    <p class="children-potential-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, rerum accusamus perferendis excepturi ab molestias quisquam perspiciatis quo quia?</p>
                     <div class="d-flex">
                         <p class="numbers d-flex flex-column">
                             <span>168</span>
@@ -52,11 +52,10 @@
             font-size: 25px;
 
             span:first-child{
-                font-size: 80px;
+                font-size: 60px;
                 margin-bottom: 5px;
             }
         }
     }
 }
-
 </style>
